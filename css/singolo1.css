@@ -223,6 +223,10 @@ a {
 	line-height: 29px;
 }
 
+.portfolio-tags {
+	height: 22px;
+}
+
 .container {
   display: flex;
   display: -webkit-flex;
