@@ -118,12 +118,12 @@ a {
 }
 
 .next span:hover {
-	background: url(assets/slider/next-hover.png) no-repeat;
+	background: url(./assets/slider/next-hover.png) no-repeat;
 	transition: 0.3s ease-in;
 }
 
 .previous span:hover {
-	background: url(assets/slider/previous-hover.png) no-repeat;
+	background: url(./assets/slider/previous-hover.png) no-repeat;
 	transition: 0.3s ease-in;
 }
 
@@ -434,19 +434,19 @@ a {
 }
 
 .facebook {
-	background: url(/assets/social/facebook.png) no-repeat center;
+	background: url(assets/social/facebook.png) no-repeat center;
 }
 
 .google {
-	background: url(/assets/social/google.png) no-repeat center;
+	background: url(assets/social/google.png) no-repeat center;
 }
 
 .twitter {
-	background: url(/assets/social/twitter.png) no-repeat center;
+	background: url(assets/social/twitter.png) no-repeat center;
 }
 
 .linkedin {
-	background: url(/assets/social/linkedin.png) no-repeat center;
+	background: url(assets/social/linkedin.png) no-repeat center;
 }
 
 .contacts__wrapper {
@@ -559,20 +559,20 @@ a {
 }
 
 .ico_location {
-	background-image: url("/assets/icons/map.svg");
+	background-image: url("assets/icons/map.svg");
 	width: 7px;
 	height: 11px;
 	margin-left: 3.5px;
 }
 
 .ico_phone {
-	background-image: url("/assets/icons/tel.svg");
+	background-image: url("assets/icons/tel.svg");
 	width: 11px;
 	height: 11px;
 }
 
 .ico_mail {
-	background-image: url("/assets/icons/mail.svg");
+	background-image: url("assets/icons/mail.svg");
 	width: 13px;
 	height: 8px;
 }
@@ -632,19 +632,19 @@ input:focus, textarea:focus {
 }
 
 .facebook {
-	background: url(/assets/social/facebook.png) no-repeat center;
+	background: url(assets/social/facebook.png) no-repeat center;
 }
 
 .google {
-	background: url(/assets/social/google.png) no-repeat center;
+	background: url(assets/social/google.png) no-repeat center;
 }
 
 .twitter {
-	background: url(/assets/social/twitter.png) no-repeat center;
+	background: url(assets/social/twitter.png) no-repeat center;
 }
 
 .linkedin {
-	background: url(/assets/social/linkedin.png) no-repeat center;
+	background: url(assets/social/linkedin.png) no-repeat center;
 }
 
 .footer__copyright {
