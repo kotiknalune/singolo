@@ -167,10 +167,6 @@ a {
 	transition: box-shadow .3s;
 }
 
-.iphone:hover {
-	box-shadow: 0 0 11px rgba(33, 33, 33, .5);
-}
-
 .vertical {
 	top: 173.5px;
 	left: 425px;
