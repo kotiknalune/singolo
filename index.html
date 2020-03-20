@@ -12,12 +12,12 @@
 <body>
     <header class="header" id="home">
         <div class="wrapper">
-            <a href="#home"><h1 class="logo">
+            <a href="#"><h1 class="logo">
 			SINGOLO<span class="asterisk colored">*</span>
 		</h1></a>
             <nav class="navigation">
                 <ul class="menu" id="menu">
-                    <li class="menu__item"><a href="#home">Home</a></li>
+                    <li class="menu__item" id="top"><a href="#home">Home</a></li>
                     <li class="menu__item"><a href="#services">Services</a></li>
                     <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
                     <li class="menu__item"><a href="#about">About</a></li>
@@ -28,27 +28,37 @@
 
     </header>
     <main>
-        <section class="showcase" id="red">
+        <section class="slider" id="slider">
             <div class="wrapper">
-                <div class="slider">
-                    <div class="slider__navigation">
-                        <a class="previous" href="#"><span></span></a>
-                        <a class="next" href="#"><span></span></a>
+                <div class="slider__slide-container">
+
+                     <!--slider navigation-->
+                     <div class="slider-navigation">
+                        <a class="slider-navigation_previous" href="#" role="button" id="previous"><span></span></a>
+                        <a class="slider-navigation_next" href="#" role="button" id="next"><span></span></a>
                     </div>
-                    <div class="slider__slide1" id="shown">
-                        <div class="slide__element">
+
+
+                
+                   <!--slides-->
+                    <div class="slide-container__slide">
+                        <div class="slide__item">
                             <div class="iphone vertical" onclick="show(this)"></div>
                             <div class="iphone__bg_blue"></div>
                             <div class="shadow-vertical"></div>
                         </div>
-                        <div class="slide__element">
+                        <div class="slide__item">
                             <div class="iphone horizontal" onclick="show(this)"></div>
                             <div class="iphone__bg_yellow"></div>
                             <div class="shadow-horizontal"></div>
                         </div>
                     </div>
 
-                    <div class="slider__slide2"></div>
+                    <div class="slide-container__slide"></div>
+
+                   
+
+
 
                 </div>
             </div>
@@ -237,14 +247,13 @@
                 <p class="contacts__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
                 <div class="contacts__context">
-
+                    
                     <form class="contacts__form" id="form-submit" action="/" method="POST">
 
-                        <!--<span class="error" id="error"></span> -->
+                       
+                        <input class="contacts__field b" id="name" type="text" name="name" placeholder="Name (Required)" required title="The name can contain only letters, spaces and dashes. No more than 30 characters">
 
-                        <input class="contacts__field b" id="name" type="text" name="name" placeholder="Name (Required)" required>
-
-                        <input class="contacts__field b" id="email" type="email" name="email" placeholder="Email (Required)" required>
+                        <input class="contacts__field b" id="email" type="email" name="email" placeholder="Email (Required)" required title="Please fill out your email">
 
                         <input class="contacts__field b" id="subject" type="text" name="subject" placeholder="Subject">
 
@@ -309,5 +318,6 @@
     </footer>
 </body>
 <script src="script.js"></script>
+
 
 </html>

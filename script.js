@@ -1,4 +1,4 @@
-// MENU ACTIVE COLOR
+// MENU ACTIVE COLOR on CLICK
 const MENU = document.getElementById('menu');
 
 MENU.addEventListener('click', (event) => {
@@ -6,10 +6,69 @@ MENU.addEventListener('click', (event) => {
   event.target.classList.add('colored');
 });
 
-// ANCHOR LINK FIX
-window.addEventListener('hashchange', function () {
-  window.scrollTo(window.scrollX, window.scrollY - 90);
-});
+// MENU ACTIVE COLOR on SCROLL
+
+window.onscroll = function() {
+  if (window.pageYOffset < 570) {
+    document.querySelector('#menu > li:nth-child(1) > a').classList.add('colored');
+  } else {
+    document.querySelector('#menu > li:nth-child(1) > a').classList.remove('colored');
+  }
+  if (window.pageYOffset < 1080 && window.pageYOffset > 570) {
+    document.querySelector('#menu > li:nth-child(2) > a').classList.add('colored');
+  } else {
+    document.querySelector('#menu > li:nth-child(2) > a').classList.remove('colored');
+  }
+  if (window.pageYOffset < 1970 && window.pageYOffset > 1080) {
+    document.querySelector('#menu > li:nth-child(3) > a').classList.add('colored');
+  } else {
+    document.querySelector('#menu > li:nth-child(3) > a').classList.remove('colored');
+  }
+  if (window.pageYOffset < 2600 && window.pageYOffset > 1970) {
+    document.querySelector('#menu > li:nth-child(4) > a').classList.add('colored');
+  } else {
+    document.querySelector('#menu > li:nth-child(4) > a').classList.remove('colored');
+  }
+  if (window.pageYOffset > 2600 ) {
+    document.querySelector('#menu > li:nth-child(5) > a').classList.add('colored');
+  } else {
+    document.querySelector('#menu > li:nth-child(5) > a').classList.remove('colored');
+  }
+};
+
+// ANCHOR LINKS
+const navLinks = document.querySelectorAll(
+  'nav a'
+);
+
+Array.from(navLinks).forEach(navLink => {
+  const href = navLink.getAttribute('href');
+  const section = document.querySelector(href);
+  const offset = 50 + 20; // nav and offset
+  
+  navLink.onclick = e => {
+    // get body position
+    const bodyRect = document.body.getBoundingClientRect().top; 
+    // get section position relative
+    const sectionRect = section.getBoundingClientRect().top; 
+    // subtract the section from body
+    const sectionPosition = sectionRect - bodyRect; 
+    // subtract offset
+    const offsetPosition = sectionPosition - offset; 
+    
+    e.preventDefault();
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+})
+
+// To Top
+document.querySelector('#top').onclick = e => {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 // iPHONE SCREEN ON/OFF 
 function show(elem) {
@@ -17,36 +76,9 @@ function show(elem) {
 };
 
 // SLIDER
-const PREVIOUS = document.querySelector('.previous');
-const NEXT = document.querySelector('.next');
-let slider = document.getElementsByClassName('slider');
-
-
-function slideChanger() {
-  if(document.querySelector('.slider__slide1').matches('#shown')) {
-    document.getElementById('shown').id = 'hidden';
-  } else {
-    document.getElementById('hidden').id = 'shown';
-  }
-};
-
-function bgChanger() {
-  if(document.querySelector('.showcase').matches('#red')) {
-    document.getElementById('red').id = 'blue';
-  } else {
-    document.getElementById('blue').id = 'red';
-  }
-};
-
-PREVIOUS.addEventListener('click', (e) => {
-  bgChanger();
-  slideChanger();
-});
-
-NEXT.addEventListener('click', (e) => {
-  bgChanger();
-  slideChanger();
-});
+const PREVIOUS = document.getElementById('previous');
+const NEXT = document.getElementById('next');
+let slider = document.getElementById('slider');
 
 //PORTFOLIO TAGS
 const TAG_MENU = document.getElementById('tags');
@@ -65,10 +97,10 @@ PORTFOLIO.addEventListener('click', (event) => {
 });
 
 //PORTFOLIO BLOCK ORDER
-const TAG_ALL = document.querySelector("#tags > span:nth-child(1)");
-const TAG_WEB = document.querySelector("#tags > span:nth-child(2)");
-const TAG_DESIGN = document.querySelector("#tags > span:nth-child(3)");
-const TAG_ART = document.querySelector("#tags > span:nth-child(4)");
+const TAG_ALL = document.querySelector('#tags > span:nth-child(1)');
+const TAG_WEB = document.querySelector('#tags > span:nth-child(2)');
+const TAG_DESIGN = document.querySelector('#tags > span:nth-child(3)');
+const TAG_ART = document.querySelector('#tags > span:nth-child(4)');
 
 TAG_ALL.addEventListener('click', (event) => {
   document.querySelectorAll('.o1').forEach(e => e.classList.remove('o1'));
@@ -91,12 +123,12 @@ TAG_ART.addEventListener('click', (event) => {
 });
 
 // FORM SUBMIT
-const BUTTON = document.querySelector("#button");
-const FORM = document.querySelector("#form-submit");
-const CLOSE_BUTTON = document.querySelector("#close-button");
+const BUTTON = document.querySelector('#button');
+const FORM = document.querySelector('#form-submit');
+const CLOSE_BUTTON = document.querySelector('#close-button');
 
-const name = document.querySelector("#name");
-const email = document.querySelector("#email");
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
 const errorElement = document.querySelector('#error');
 
 FORM.addEventListener('submit', (e) => {
@@ -105,17 +137,6 @@ FORM.addEventListener('submit', (e) => {
 });
 
 BUTTON.addEventListener('click', (e) => {
-/*
-  let messages = [];
-  if(name.value === '' || name.value == null) {
-    messages.push('Name is required');
-  }
-  if(email.value === '' || email.value == null) {
-    messages.push('Email is required');
-  }
-  errorElement.innerText = messages.join(', '); 
-
-*/
 
   if (document.getElementById('name').checkValidity() && document.getElementById('email').checkValidity()) {
     e.preventDefault();
@@ -124,18 +145,18 @@ BUTTON.addEventListener('click', (e) => {
     document.getElementById('message-title').innerText = 'The letter was sent';
 
     if (subject !== '') {
-        document.getElementById('message-subject').innerText = 'Subject: ' + subject;
+      document.getElementById('message-subject').innerText = 'Subject: ' + subject;
+    } else { 
+      document.getElementById('message-subject').innerText = 'Without subject'; 
     }
-    else { document.getElementById('message-subject').innerText = 'Without subject'; }
-
     if (project !== '') {
-        document.getElementById('message-content').innerText = 'Description: ' + project;
+      document.getElementById('message-content').innerText = 'Description: ' + project;
+    } else { 
+      document.getElementById('message-content').innerText = 'Without description'; 
     }
-    else { document.getElementById('message-content').innerText = 'Without description'; }
-
     document.getElementById('message-block').classList.remove('hidden');
     document.getElementById('message').classList.remove('hidden');
-}
+  }
 });
 
 function resetMessage() {
@@ -144,9 +165,8 @@ function resetMessage() {
   document.getElementById('message-content').innerText = '';
   document.getElementById('message-block').classList.add('hidden');
   document.getElementById('message').classList.add('hidden');
-  document.querySelector("form").reset();
+  document.querySelector('form').reset();
 };
-
 
 CLOSE_BUTTON.addEventListener('click', () => {
   resetMessage();
