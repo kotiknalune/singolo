@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Singolo</title>
-
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header" id="home">
+    <header class="header">
         <div class="wrapper">
             <a href="#"><h1 class="logo">
-			SINGOLO<span class="asterisk colored">*</span>
+			SINGOLO<span class="asterisk active">*</span>
 		</h1></a>
             <nav class="navigation">
                 <ul class="menu" id="menu">
-                    <li class="menu__item" id="top"><a href="#home">Home</a></li>
+                    <li class="menu__item" id="top"><a href="#home" class="active">Home</a></li>
                     <li class="menu__item"><a href="#services">Services</a></li>
                     <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
                     <li class="menu__item"><a href="#about">About</a></li>
@@ -28,38 +25,54 @@
 
     </header>
     <main>
-        <section class="slider" id="slider">
+        <section class="slider" id="home">
             <div class="wrapper">
-                <div class="slider__slide-container">
+                <div class="wrapper slider__wrapper">
+                    <button class="slider__btn slider__btn_left"></button>
+                    <button class="slider__btn slider__btn_right"></button>
+                    <div class="slides">
 
-                     <!--slider navigation-->
-                     <div class="slider-navigation">
-                        <a class="slider-navigation_previous" href="#" role="button" id="previous"><span></span></a>
-                        <a class="slider-navigation_next" href="#" role="button" id="next"><span></span></a>
-                    </div>
-
-
-                
-                   <!--slides-->
-                    <div class="slide-container__slide">
-                        <div class="slide__item">
-                            <div class="iphone vertical" onclick="show(this)"></div>
-                            <div class="iphone__bg_blue"></div>
-                            <div class="shadow-vertical"></div>
+                        <!-- SLIDE-1 -->
+                        <div class="slider__slide active slide-1">
+                            <div class="phones">
+                                <div class="phone phone_vertical">
+                                    <div class="phone__base"></div>
+                                    <div class="phone__screen"></div>
+                                    <div class="phone__shadow"></div>
+                                    <div class="phone__btn"></div>
+                                </div>
+                                <div class="phone phone_horizontal">
+                                    <div class="phone__base"></div>
+                                    <div class="phone__screen"></div>
+                                    <div class="phone__shadow"></div>
+                                    <div class="phone__btn"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slide__item">
-                            <div class="iphone horizontal" onclick="show(this)"></div>
-                            <div class="iphone__bg_yellow"></div>
-                            <div class="shadow-horizontal"></div>
+
+                        <!-- SLIDE-2 -->
+                        <div class="slider__slide slide-2">
+                            <div class="phones">
+                                <div class="phone phone_vertical">
+                                    <div class="phone__base"></div>
+                                    <div class="phone__screen"></div>
+                                    <div class="phone__shadow"></div>
+                                </div>
+                                <div class="phone phone_vertical">
+                                    <div class="phone__base"></div>
+                                    <div class="phone__screen"></div>
+                                    <div class="phone__shadow"></div>
+                                    <div class="phone__btn"></div>
+                                </div>
+                                <div class="phone phone_vertical">
+                                    <div class="phone__base"></div>
+                                    <div class="phone__screen"></div>
+                                    <div class="phone__shadow"></div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-
-                    <div class="slide-container__slide"></div>
-
-                   
-
-
-
                 </div>
             </div>
         </section>
@@ -107,7 +120,7 @@
                 <div class="container">
                     <div class="container__item">
                         <div class="item__icon">
-                            <span class="icon phone"></span>
+                            <span class="icon iphone"></span>
                         </div>
                         <div class="item__text">
                             <h3>Responsive Layout</h3>
@@ -191,13 +204,10 @@
                                 <li><a href="#"><span class="social__icon linkedin"></span></a></li>
                             </ul>
                         </div>
-
                     </div>
 
                     <div class="employee">
-
                         <img class="employee__photo" src="./assets/images/employees/desmond_miles.png" alt="Desmond Miles">
-
                         <div class="employee__content">
                             <h3>Desmond Miles</h3>
                             <div class="employee__text">
@@ -213,7 +223,6 @@
                                 <li><a href="#"><span class="social__icon linkedin"></span></a></li>
                             </ul>
                         </div>
-
                     </div>
 
                     <div class="employee">
@@ -235,9 +244,7 @@
                                 <li><a href="#"><span class="social__icon linkedin"></span></a></li>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </section>
@@ -247,10 +254,8 @@
                 <p class="contacts__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
                 <div class="contacts__context">
-                    
                     <form class="contacts__form" id="form-submit" action="/" method="POST">
 
-                       
                         <input class="contacts__field b" id="name" type="text" name="name" placeholder="Name (Required)" required title="The name can contain only letters, spaces and dashes. No more than 30 characters">
 
                         <input class="contacts__field b" id="email" type="email" name="email" placeholder="Email (Required)" required title="Please fill out your email">
@@ -260,8 +265,6 @@
                         <textarea class="contacts__textarea contacts__field" id="text" name="description" maxlength="200" placeholder="Describe your object in detail..."></textarea>
 
                         <button class="button" id="button" type="submit">Submit</button>
-
-                       
 
                     </form>
 
@@ -300,15 +303,13 @@
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer class="footer">
         <div class="wrapper footer__wrapper">
             <span class="footer__copyright">&copy; Copyright 2013</span>
             <div class="social">
                 <div class="social__links">
-                    <a href="#"></a><span class="social__icon facebook"></span></a>
+                    <a href="#"><span class="social__icon facebook"></span></a>
                     <a href="#"><span class="social__icon google"></span></a>
                     <a href="#"><span class="social__icon twitter"></span></a>
                     <a href="#"><span class="social__icon linkedin"></span></a>
@@ -316,8 +317,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-
-
 </html>
