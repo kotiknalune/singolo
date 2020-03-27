@@ -1,0 +1,22 @@
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Lato', Verdana, sans-serif;
+}
+
+.wrapper {
+	width: 1020px;
+	margin: auto;
+}
+
+main {
+	display:flex;
+	flex-direction:column;
+}
+
+.active {color:$color-red-primary;}
+

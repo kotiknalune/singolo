@@ -1,0 +1,61 @@
+
+#message-block {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.32);
+	overflow-wrap: break-word;
+	&.hidden {
+		display: none;
+	}
+}
+
+#message {
+	position: absolute;
+	width: 510px;
+	padding: 10px;
+	background-color: $color-message-bg;
+	top: 20%;
+	left: 32%;
+	border: 2px solid $color-dark;
+	@include radius(5px);
+	z-index:3;
+
+	& p {
+		padding-left: 15px;
+		line-height: 3rem;
+	}
+}
+
+#message-title {
+	text-align: center;
+}
+
+#message-content {
+	height:200px;
+	overflow-y: auto;
+}
+
+.text-message {
+  max-height: 250px;
+  padding-right: 10px;
+}
+
+span.messages {
+	font-size: 1.6rem;
+	color: $color-white;
+	display: block;
+	padding: 10px;
+}
+
+.message-button {
+	width: 70px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left: 43%;
+
+	@extend%button;
+}
+

@@ -1,0 +1,56 @@
+
+@mixin text($color, $size, $weight) {
+    color: $color;
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin radius($property) {
+  border-radius: $property;
+	-moz-border-radius: $property;
+	-webkit-border-radius: $property;
+}
+
+@mixin box-shadow($v1,$v2,$v3,$v4,$color) {
+-webkit-box-shadow:inset $v1 $v2 $v3 $v4 $color;
+-moz-box-shadow:inset $v1 $v2 $v3 $v4 $color;
+box-shadow:inset $v1 $v2 $v3 $v4 $color;
+}
+
+@mixin transition($property:all, $time:0.5s) {
+  transition: $property $time ease;
+	-moz-transition: $property $time ease;
+	-webkit-transition: $property $time ease;
+}
+
+@mixin radius($property) {
+    border-radius: $property;
+    -moz-border-radius: $property;
+    -webkit-border-radius: $property;  
+}
+
+@mixin respond-to($media) {
+
+  @if $media == moblie-width {
+    @media (max-width: $mobile-width) { @content; }
+  }
+  @else if $media == tablet-width {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) { @content; }
+  }
+  @else if $media == desktop-width {
+    @media (min-width: $desktop-width) { @content; }
+  }
+}
+
+@mixin service-icon($width:32px,$height:32px){
+	margin-top: 12px;
+	width: $width;
+	height: $height;
+	background-size: $width 32px;
+}

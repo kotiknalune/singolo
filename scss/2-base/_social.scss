@@ -1,0 +1,18 @@
+.social {
+	display: flex;
+	flex-direction: column;
+}
+
+.social__links {
+	margin-right: 31.5px;
+}
+
+.social__icon {
+	margin-right:0.8rem;
+	@extend%icons;
+}
+
+.facebook {background: url(assets/images/social/facebook.png) no-repeat center;}
+.google {background: url(assets/images/social/google.png) no-repeat center;}
+.twitter {background: url(assets/images/social/twitter.png) no-repeat center;}
+.linkedin {background: url(assets/images/social/linkedin.png) no-repeat center;}

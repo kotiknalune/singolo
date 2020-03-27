@@ -1,0 +1,30 @@
+.footer {
+    background-color: $color-medium;
+    height: 75px;
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__copyright {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $color-primary;
+	padding: 3rem;
+	padding-left: 4rem;
+	letter-spacing: -0.1pt;
+}
+
+.footer__links{
+    margin-right: 35px;
+    margin-top: 5px;
+	display:flex;
+}
+
+.footer__icon {
+    margin-right:0.7rem;
+	@extend%icons;
+}

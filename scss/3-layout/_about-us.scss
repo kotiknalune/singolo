@@ -1,0 +1,40 @@
+
+.about-us {
+	background:$color-light-grey;
+	border-bottom: solid 5.5px $color-white;
+	height: 728px;
+}
+
+.employees {
+	margin: 4.3rem 2rem 0 4rem;
+}
+
+.employee {
+	flex: 0 0 33.3333%;
+}
+
+.employee__content {
+	margin-top:0.7rem;
+	& h3 {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		line-height: 3.7rem;
+	}
+}
+
+.employee__text {
+	padding-right: 2rem;
+	& p {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		text-align: justify;
+	}
+}
+
+.employee__social-links {
+    margin-top: 2.5rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}

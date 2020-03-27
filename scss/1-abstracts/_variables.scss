@@ -1,0 +1,25 @@
+// Colors
+$color-primary: #666d89;
+$color-secondary:#767E9E;
+$color-light: #648bf0;
+$color-medium:#2D303A;
+$color-dark: #323746;
+
+$color-red-primary: #F06C64;
+$color-red-secondary: #EA676B;
+$color-red-light:#f48c8f;
+$color-red-medium:#d6564f;
+$color-red-dark:#832d28;
+
+$color-white: #ffffff;
+$color-light-grey: #f2f2f2;
+$color-medium-grey: #f0d8d9;
+
+$color-message-bg: transparentize($color-dark, 0.1);
+$color-cover-bg: transparentize($color-dark, 0.3);
+$color-trasparent: transparentize($color-white,1);
+// Responsive
+
+$desktop-width: 1020px;
+$tablet-width: 768px;
+$moblie-width: 375px;

@@ -1,0 +1,62 @@
+h1 {
+    font-size: 2.5rem;
+    font-family:'Lato', Verdana;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: -0.06rem;
+    transition: ease all .5s;
+   
+    @include respond-to(mobile-width){
+        font-size: 1.97rem;
+        line-height: 2.4rem;
+        transition: ease all .5s;
+    }
+}
+
+h2 {
+	color: $color-primary;
+	font-size: 3rem;
+	font-weight: 900;
+    line-height:3.5rem;
+    margin:0;
+}
+
+h3 {
+	color: $color-primary;
+	font-weight: 900;
+	font-size: 1.8rem;
+     margin:0;
+}
+
+p {
+	color: $color-secondary;
+	font-size: 1.8rem;
+	font-weight: 300;
+    word-spacing: 0.065rem;
+     margin:0;
+}
+
+a {
+	text-decoration: none;
+	color:$color-white;
+	cursor: pointer;
+}
+
+.title {
+	padding-top:6rem;
+	padding-left:4rem;
+    padding-right:4rem;
+    margin: 0;
+
+    & h2 {
+	    letter-spacing: 0.01rem;
+    }
+}
+
+.title__description {
+	padding-top: 1.9rem;
+    line-height: 3.1rem;
+    letter-spacing: -0.1pt;
+    word-break:break-all;
+}

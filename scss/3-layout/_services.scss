@@ -1,0 +1,90 @@
+
+.services {
+	background-color: $color-light-grey;
+	height: 494px;
+	border-bottom: 6px solid $color-white;
+}
+
+.services__title {
+	padding-top: 6rem;
+    padding-left:3.95rem;
+    margin-bottom:0;
+}
+
+.services__subtitle {
+    padding-top:1.9rem;
+	padding-left:4rem;
+    line-height: 3.1rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0px 30px;
+}
+
+.container__item {
+	flex: 0 0 33.333333%;
+    margin-top: 42.5px;
+    height: 80px;
+}
+
+.item__icon {
+    display: block;
+    float: left;
+    margin: 2px 20px 60px 11px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 2px solid $color-primary;
+    width: 55px;
+    height: 55px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.item__text {
+	padding-right:11px;
+    & p {
+        font-size: 1.2rem;
+        padding-top: 6.5px;
+        line-height: 2.1rem;
+        text-align: justify;
+        word-break: break-all;
+    }
+}
+
+.icon {
+	display: block;
+	margin: auto;
+}
+
+.pencil {
+	@include service-icon();
+	background: url(assets/images/icons/pencil.svg);
+}
+
+.lightbulb {
+	@include service-icon(22px);
+	background: url(assets/images/icons/lightbulb.svg);
+}
+
+.heart {
+	@include service-icon(32px,28px);
+	background: url(assets/images/icons/heart.svg);
+}
+
+.iphone {
+	@include service-icon(22px);
+	background: url(assets/images/icons/phone.svg);
+}
+
+.bubble {
+	@include service-icon(32px,28px);
+	background: url(assets/images/icons/bubble.svg);
+}
+
+.star {
+	@include service-icon();
+	background: url(assets/images/icons/star.svg);
+}
