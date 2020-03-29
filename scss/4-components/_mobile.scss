@@ -10,7 +10,7 @@
 
  .logo {
   top: 12px;
-  left: 0px;
+  left: 5px;
   
     z-index: 9998;
     font-size: 1.96875rem;
@@ -330,8 +330,9 @@
   }
 
   .contact-information {
-  max-width: 315px;
-  }
+    max-width: 315px;
+    margin: 0;
+}
 
   .contact-information__title {
   padding-top: 33px;

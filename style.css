@@ -853,7 +853,7 @@ button {
 }
 
 h1.to-left {
-  left: -76px;
+  left: -71px;
   transition: left 0.5s ease;
   -moz-transition: left 0.5s ease;
   -webkit-transition: left 0.5s ease;
@@ -992,7 +992,7 @@ main > .blue {
 }
 
 .slide-2 {
-  background-image: url(/assets/images/slider/slide2.png);
+  background-image: url(./assets/images/slider/slide2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1171,7 +1171,7 @@ main > .blue {
   padding: 11px;
   background-color: rgba(50, 55, 70, 0.9);
   top: 20%;
-  left: 35%;
+  left: 23%;
   border: 1px solid #fbc65f80;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1559,7 +1559,7 @@ span.messages {
 
   .logo {
     top: 12px;
-    left: 0px;
+    left: 5px;
     z-index: 9998;
     font-size: 1.96875rem;
     line-height: initial;
@@ -1870,6 +1870,7 @@ span.messages {
 
   .contact-information {
     max-width: 315px;
+    margin: 0;
   }
 
   .contact-information__title {
