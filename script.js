@@ -223,6 +223,19 @@ CLOSE_BUTTON.addEventListener('click', () => {
 
 // HAMBURGER
 
+function darkenContent(node, onClickCallback = false){
+  if(node.querySelector(".dark-background") === null) {
+    let background = document.createElement("div");
+    background.classList.add("dark-background");
+    node.append(background);
+    if (onClickCallback) {
+      node.querySelector(".dark-background").addEventListener("click", onClickCallback);
+    }
+  }
+  return node;
+}
+
+
 const burger = document.querySelector(".header__burger");
 const header = document.querySelector("header");
 const h1 = document.querySelector("h1");
@@ -271,8 +284,9 @@ window.addEventListener("resize", () => {
   }
 });
 
-menuLinks.forEach(link => link.addEventListener("click", e => {
+navLinks.forEach(link => link.addEventListener("click", e => {
   if(document.documentElement.clientWidth < 768) {
-    setTimeout(drawMenu, 1100);
+    setTimeout(drawMenu, 100);
   }
 }));
+

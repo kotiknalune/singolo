@@ -9,8 +9,8 @@
   }
 
  .logo {
-    top: 10px;
-    left:0;
+  top: 12px;
+  left: 1px;
     margin-left: calc(50vw - 4rem);
     z-index: 9998;
     font-size: 1.96875rem;
@@ -18,6 +18,10 @@
     transition: margin-left 0.6s;
     font-weight: bold;
   }
+
+  .menu {
+    flex-direction: column;
+}
 
   .navigation {
     position: absolute;
@@ -36,17 +40,17 @@
     & ul {
       position: relative;
       padding-inline-start: 0;
-      top: 233px;
-      left: 72px;
+      top: 216px;
+      left: 52px;
 
       & li {
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
 
         & a {
           font-size: 24px;
           font-weight: bold;
-          letter-spacing: -0.04em;
+          letter-spacing: -0.045em;
         }
 
         &:not(:first-child) a {
@@ -57,62 +61,345 @@
     }
   }
 
+  .menu__item a:after {
+    display:none;
+}
+
   .wrapper {
-    width: 375px;
-    margin: auto;
-}
+  width: 375px;
+  margin: auto;
+  }
 
-.slider {
+  .slider {
   border: none;
+  height: 221px;
+  }
+
+  .slider__wrapper {
+  height: 221px;
+  }
+
+  .slider__btn_left {
+  left: -2px;
+  }
+
+  .slider__btn_right {
+  right: -2px;
+  }
+
+  main > .blue {
+  border-bottom:none;
+  }
+
+  .phone_horizontal .phone__base {
+    top: 52px;
+    right: 225px;
+    width: 169px;
+    height: 123px;
+  }
+
+  .phone_horizontal .phone__screen {
+    right: 249px;
+    top: 68px;
+    height: 91px;
+    width: 123px;
+  }
+
+  .phone_horizontal .phone__shadow {
+    right: 216px;
+    top: -12px;
+    height: 262px;
+    width: 176px;
+  }
+
+  .phone_vertical .phone__base {
+    left: 214px;
+    top: 140px;
+    height: 190px;
+    width: 80px;
+  }
+
+  .phone_vertical .phone__screen {
+    left: 220px;
+    top: 148px;
+    height: 176px;
+    width: 69px;
+  }
+
+  .phone_vertical .phone__shadow {
+    left: 220px;
+    top: 148px;
+    height: 176px;
+    width: 69px;
+  }
+
+  .phone__btn {
+    width: 17px;
+    height: 17px;
 }
 
-.services {
-  height: 667px;
- }
- 
- .services__title {
- padding-top: 4rem;
- padding-left: 4.1rem;
- margin-bottom: 0;
- letter-spacing: 0.01em;
-}
-.services__subtitle {
- padding-top: 1.9rem;
- padding-left: 4rem;
- line-height: 3rem;
- margin: 0 auto;
- padding-right: 46px;
- letter-spacing: -0.1px;
-}
+  .phone_vertical .phone__btn {
+  left: 62.3%;
+  bottom: 18.1%;
+  }
+  .phone_horizontal .phone__btn {
+  left: 18.6%;
+  }
 
-.item__text p {
- padding-top: 6px;
- line-height: 2.1rem;
+  .slide-2 {
+    background-image: url(/assets/images/slider/slide2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
-}
- .container {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     margin: 0 30px;
-     padding-top: 34px;
- }
- 
- .container__item {
-     flex: 0 0 50%;
-     margin: 0;
-     height: 104px;
-     margin-bottom: 40px;
- }
- 
- .item__text {
-     padding-right: 42px;
- }
+  .slide-2 .phones {
+  display:none;
+  }
+  
+  .services {
+  height: 1033px;
+  border: none;
+  }
 
- .item__text p {
-     padding-top: 11px;
-     line-height: 1.9em;
- }
+  .services__title {
+  padding-top: 2.7rem;
+  padding-left: 3.1rem;
+  margin-bottom: 0;
+  letter-spacing: 0.0em;
+  }
+
+  .services__subtitle {
+  padding-top: 1.7rem;
+  padding-left: 3rem;
+  line-height: 3rem;
+  padding-right: 41px;
+  letter-spacing: 0.01em;
+  }
+
+  .container {
+  margin: 0 32px;
+  padding-top: 26px;
+  }
+
+  .container__item {
+  flex: 0 0 100%;
+  margin: 0;
+  height: 119.5px;
+  margin-bottom: 0px;
+
+  & h3 {
+    margin: 0;
+    line-height: 2rem;
+    letter-spacing: 0.0em;
+  }
+  }
+
+  .item__text {
+  padding-right: 10px;
+  }
+
+  .item__text p {
+  padding-top: 10px;
+  }
+
+  .portfolio {
+  height: 843px;
+  border-bottom: none;
+  }
+
+  .title {
+  padding-top: 4.2rem;
+  padding-left: 3rem;
+  padding-right: 4rem;
+  margin: 0;
+  }
+
+  .title h2 {
+  letter-spacing: -0.02em;
+  }
+
+  .title__description {
+  letter-spacing: 0;
+  }
+
+  .portfolio__tags {
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+  }
+
+  .tag {
+  margin-right: 0.5rem;
+  }
+
+  .portfolio__blocks {
+  margin: 1rem 3rem 0rem 3rem;
+  height: 565px;
+  }
+
+  .blocks__block {
+  width: 151px;
+  height: 156px;
+  margin-bottom: -14px;
+  }
+
+  .about__title {
+  padding-top: 34px;
+  padding-left: 29px;
+  }
+
+  .about__title .title__description {
+  padding-top: 18px;
+  line-height: 3rem;
+  letter-spacing: 0.1pt;
+  }
+
+  .employees {
+  margin: 2.3rem 3rem 0 3rem;
+  }
+
+  .employee {
+  flex: 0 0 100%;
+  margin-bottom: 17px;
+  }
+
+  .employee__photo {
+  width: 315px;
+  }
+
+  .about-us {
+  border-bottom: none;
+  height: 1753px;
+  }
+
+  .employee__content {
+  margin-top: 10px;
+  }
+
+  .employee__content h3 {
+  line-height: 2.8rem;
+  letter-spacing: 0;
+  }
+
+  .employee__text p {
+  line-height: 20px;
+  }
+
+  .employee__text {
+  padding-right: 0;
+  }
+
+  .employee__social-links {
+  margin-top: 1.3rem;
+  }
+
+  .contacts {
+  border-bottom: none;
+  height: 970px;
+  }
+
+
+  .contacts__wrapper {
+  padding-top: 57px;
+  padding-left: 30px;
+  }
+
+  .contacts__description {
+  letter-spacing: 0;
+  padding-right: 7rem;
+  }
+
+  .contacts__context {
+  flex-direction: column;
+  }
+
+  .contacts__form {
+  max-width: 287px;
+  padding-top: 22px;
+  padding-bottom: 0;
+  }
+
+  .contacts__field {
+  padding: 10px 22px 10px 6px;
+  margin-bottom: 11px;
+  }
+
+  .contacts__textarea {
+  height: 144px;
+  padding: 6px 21px 9px 7px;
+  }
+
+  .button {
+  padding: 16px 138px;
+  font-weight: 700;
+  font-size: 15px;
+  }
+
+  .contact-information {
+  max-width: 315px;
+  }
+
+  .contact-information__title {
+  padding-top: 33px;
+  letter-spacing: -0.01em;
+  }
+  .contact-information__description {
+  padding-top: 3px;
+  letter-spacing: 0.01rem;
+  padding-bottom: 9px;
+  }
+
+  .contact {
+  align-items: normal;
+  margin-bottom: 2px;
+  }
+
+  .contact__link {
+  line-height: 24px;
+  margin-left: 12px;
+  }
+
+  .ico {
+  margin-top: 6px;
+  }
+  .footer__wrapper {
+  justify-content: center;
+  }
+
+  .footer__copyright {
+  display: none;
+  }
+
+  .footer__links {
+  margin-left: 43px;
+  margin-top: 22px;
+  }
+
+  .footer__icon {
+  margin-right: 8px;
+  }
+
+  #message {
+  width: 323px;
+  padding: 12px;
+  top: 18%;
+  left: 3%;
+  }
+  #message p {
+  padding: 0px;
+  }
+
+  span.messages {
+  font-size: 1.3rem;
+  padding: 7px;
+  }
+
+  .message-button {
+  margin-top: 1rem;
+  margin-left: 35%;
+  padding: 6px 34px;
+  }
+
 
 }
 

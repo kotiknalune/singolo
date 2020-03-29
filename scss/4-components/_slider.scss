@@ -47,6 +47,12 @@ main > .blue {
   cursor: pointer;
 }
 
+@media (hover: none) {
+  .slider__btn:hover {
+    background-image: url('assets/images/chev.png');
+  }
+}
+
 .slider__btn_left {
   left: 28px;
   background-position: center 20%;

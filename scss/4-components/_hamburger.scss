@@ -1,12 +1,20 @@
 button {
   padding: 0;
   font: inherit;
-  
   cursor: pointer;
-  
   color: inherit;
   background-color: transparent;
   border: none;
+}
+
+h1.to-left {
+  left: -76px;
+  @include transition(left);
+}
+
+nav.to-right {
+  left: 0;
+  background: $color-medium;
 }
 
 .header__burger {

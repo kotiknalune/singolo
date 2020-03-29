@@ -5,7 +5,8 @@ h1 {
     font-weight: 600;
     line-height: 3rem;
     letter-spacing: -0.06rem;
-    transition: ease all .5s;
+    
+    @include transition();
    
     @include respond-to(mobile-width){
         font-size: 1.97rem;
@@ -60,7 +61,7 @@ a {
 	padding-top: 6.05rem;
     padding-left: 4.1rem;
     padding-right: 4rem;
-    margin: 0
+    margin: 0;
 
     & h2 {
 	    letter-spacing: 0.04rem;
