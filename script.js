@@ -80,6 +80,7 @@ function changeSlide (direction) {
     isEnabled = false;
 
     const activeSlide = document.querySelector('.slider__slide.active');
+    const slide = document.querySelector('.slide-2');
     const slider = document.querySelector('.slider');
     let nextSlide = null;
     let activeSlideX = activeSlide.offsetLeft;
@@ -89,8 +90,10 @@ function changeSlide (direction) {
  function slideBackground() {
   if(slider.matches('.blue')){
     slider.classList.remove('blue');
+    slide.classList.add('hidden');
   } else {
     slider.classList.add('blue');
+    slide.classList.remove('hidden');
   } 
  }
     if (direction === 'right') {

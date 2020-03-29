@@ -21,7 +21,7 @@ main > .blue {
   margin: 0 auto;
   position: relative;
  
-  height: 64vh;
+  height:595px;
   justify-content: center;
   transition: all 1s ease;
   overflow: hidden;
@@ -87,10 +87,15 @@ main > .blue {
 }
 
 .slide-2 {
-  left: 100%;
-  display: flex;
-  justify-content: center;
- 
+  background-image: url(/assets/images/slider/slide2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include transition(opacity, 1s);
+}
+
+.slide-2 .phones {
+display:none;
 }
 
 .slide-1 .phones {
