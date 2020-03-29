@@ -296,7 +296,7 @@ a {
   margin: 0;
 }
 .title h2 {
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
 }
 
 .about__title {
@@ -306,13 +306,13 @@ a {
   margin: 0;
 }
 .about__title h2 {
-  letter-spacing: 0.04rem;
+  letter-spacing: -0.01em;
 }
 
 .title__description {
   padding-top: 1.9rem;
   line-height: 3rem;
-  letter-spacing: -0.1pt;
+  letter-spacing: 0.01em;
 }
 
 .social {
@@ -409,7 +409,7 @@ a {
   padding-top: 6rem;
   padding-left: 4rem;
   margin-bottom: 0;
-  letter-spacing: 0.015em;
+  letter-spacing: -0.01em;
 }
 
 .services__subtitle {
@@ -417,7 +417,7 @@ a {
   padding-left: 4rem;
   line-height: 3rem;
   padding-right: 4rem;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.01em;
 }
 
 .container {
@@ -527,7 +527,7 @@ a {
   display: inline-block;
   position: relative;
   padding: 0px 7px;
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
   line-height: 2rem;
   font-size: 1.2rem;
   color: #666d89;
@@ -669,7 +669,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   line-height: 3.2rem;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 }
 
 .employee__text {
@@ -689,8 +689,9 @@ a {
 }
 
 .contacts__wrapper {
-  padding-top: 7rem;
-  width: 940px;
+  padding-top: 7.1rem;
+  width: 947px;
+  padding-left: 25px;
 }
 
 .contacts {
@@ -709,17 +710,22 @@ a {
   word-spacing: -0.5pt;
 }
 
+.contact-information {
+  max-width: 300px;
+  margin-left: 48px;
+}
+
 .contacts__description {
   line-height: 3rem;
   padding-top: 3rem;
   color: #f0d8d9;
-  letter-spacing: -0.01em;
-  padding-right: 1rem;
+  letter-spacing: 0.01em;
+  padding-right: 10px;
 }
 
 .contacts__context {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .contacts__form {
@@ -751,16 +757,12 @@ a {
   padding: 6px 14px 10px 13px;
 }
 
-.contact-information {
-  max-width: 300px;
-}
-
 .contact-information__title {
   line-height: 1.8rem;
   font-weight: 900;
   color: #f0d8d9;
   padding-top: 45px;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
 }
 
 .contact-information__description {
@@ -768,7 +770,7 @@ a {
   line-height: 22px;
   padding-top: 10px;
   text-align: justify;
-  letter-spacing: -0.01rem;
+  letter-spacing: 0.01rem;
   padding-bottom: 20px;
   color: #ffffff;
 }
@@ -823,7 +825,7 @@ a {
 }
 
 .footer__copyright {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 400;
   color: #666d89;
   padding: 3rem;
