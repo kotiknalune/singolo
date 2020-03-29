@@ -1,4 +1,4 @@
-@media (max-width:1019px) and (min-width:768px) {
+@media screen and (max-width:1019px) and (min-width:768px) {
 
     .wrapper {
         width: 768px;
@@ -38,7 +38,7 @@
     }
 
     .slider__wrapper {
-        height: 58.65vw;
+        height: 451px;
     }
     .slider__btn_left {
         left: 17px;

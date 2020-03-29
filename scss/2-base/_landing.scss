@@ -21,3 +21,10 @@ main {
 
 .active {color:$color-red-primary;}
 
+@media (min-width: 1020px) {
+	.slider {
+		min-height: 600px;
+	}
+	}
+	
+

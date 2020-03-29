@@ -1,13 +1,4 @@
-
-@media (max-width: 767px) {
-  .slider,
-  .services,
-  .portfolio,
-  .about,
-  .contact { 
-    scroll-margin-top: 70px;
-  }
-
+@media screen and (max-width: $tablet-width - 1) {
   .header {
     height: 71px;
     border:0;
@@ -66,67 +57,62 @@
     }
   }
 
-  .navigation .active {
-    left: 0;
-  }
-
-  .navigation .to-right {
-    left: 0;
-  }
-
-  nav li:not(:first-child) a::before {
-    content: none;
-    left: 0;
-  }
-
+  .wrapper {
+    width: 375px;
+    margin: auto;
 }
 
-
-
-
-
-@media (max-width: 374px) {
-  .iphone {
-    width: 70.4px;
-    height: 151.5px;
-  }
-
-  .iphone__phone {
-    width: 63.4px;
-    height: 134px;
-  }
-
-  .iphone__screen {
-    top: 18.6px;
-    width: 56px;
-    height: 98px;
-  }
-
-  .iphone__shadow {
-    width: 70.4px;
-    height: 140.9px;
-  }
-
-  .iphone_horizontal .iphone__shadow {
-    top: auto;
-    bottom: 0;
-  }
-
-  .iphone_horizontal .iphone__screen {
-    top: 37px;
-    height: 97.5px;
-  }
-}
-
-@media (max-width: 350px) {
-  .portfolio__tags .tag {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 1020px) {
 .slider {
-    min-height: 600px;
+  border: none;
 }
+
+.services {
+  height: 667px;
+ }
+ 
+ .services__title {
+ padding-top: 4rem;
+ padding-left: 4.1rem;
+ margin-bottom: 0;
+ letter-spacing: 0.01em;
+}
+.services__subtitle {
+ padding-top: 1.9rem;
+ padding-left: 4rem;
+ line-height: 3rem;
+ margin: 0 auto;
+ padding-right: 46px;
+ letter-spacing: -0.1px;
+}
+
+.item__text p {
+ padding-top: 6px;
+ line-height: 2.1rem;
+
+}
+ .container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin: 0 30px;
+     padding-top: 34px;
+ }
+ 
+ .container__item {
+     flex: 0 0 50%;
+     margin: 0;
+     height: 104px;
+     margin-bottom: 40px;
+ }
+ 
+ .item__text {
+     padding-right: 42px;
+ }
+
+ .item__text p {
+     padding-top: 11px;
+     line-height: 1.9em;
+ }
+
 }
 
