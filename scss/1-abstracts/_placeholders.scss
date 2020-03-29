@@ -48,15 +48,18 @@
 }
 
 %button {
-	padding: 5px 10px;
-	border: none;
-	background: $color-red-light;
-	color: $color-white;
+	padding: 10px 47px;
+    border: none;
+    background: #fbc65f;
+    color: #9c7a39;
 	@include radius(5px);
-	cursor: pointer;
+    cursor: pointer;
+    text-transform: uppercase;
 
 	&:hover {
-		background-color: $color-red-medium;
+		color: #fbc65f;
+        background-color: #9c7a39;
 		@include transition();
 	}
 }
+

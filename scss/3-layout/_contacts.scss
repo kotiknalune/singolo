@@ -10,8 +10,8 @@
 
 .contacts__title {
 	font-size: 3rem;
-	letter-spacing: -0.05pt;
-	line-height: 1.8rem;
+	letter-spacing: 0.01em;
+    line-height: 1.2rem;
 	font-weight: 900;
 	margin: 0;
 	color:$color-medium-grey;
@@ -20,8 +20,10 @@
 
 .contacts__description {
 	line-height: 3rem;
-	padding-top: 26px;
+	padding-top: 3rem;
 	color:$color-medium-grey;
+	letter-spacing: -0.01em;
+    padding-right: 1rem;
 }
 
 .contacts__context {
@@ -52,9 +54,9 @@
 }
 
 .contacts__textarea {
-	height: 182px;
-	letter-spacing: 0.019em;
-	padding: 7px 14px 13px;
+    height: 140px;
+    letter-spacing: 0.019em;
+    padding: 6px 14px 10px 13px;
 }
 
 .contact-information {
@@ -65,7 +67,8 @@
     line-height: 1.8rem;
     font-weight: 900;
     color:$color-medium-grey;
-    padding-top: 45px;
+	padding-top: 45px;
+	letter-spacing: 0.02em;
 
 }
 .contact-information__description {
@@ -123,4 +126,3 @@ input,textarea {
 .button {
 	@extend%button;
 }
-

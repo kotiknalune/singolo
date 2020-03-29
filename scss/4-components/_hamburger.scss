@@ -1,43 +1,48 @@
-.hamburger .hamburger__line, .hamburger::after, .hamburger::before {
-    content: "";
-    display: inline-block;
+button {
+  padding: 0;
+  font: inherit;
+  
+  cursor: pointer;
+  
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+.header__burger {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 26px;
+  z-index: 9998;
+
+  width: 25px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("assets/images/icons/burger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include transition(transform);
+}
+
+.rotated90 {
+  @include transform(rotate(90deg));
+}
+
+.dark-background {
     position: absolute;
-    background: #ffffff;
-    border-radius: 5px;
-    height: 2px;
+    z-index: 9996;
     width: 100%;
+    height: 100vh;
+    background: $color-medium;
+    opacity: 0.6;
+    @include transition(opacity);
+    cursor: pointer;
 }
 
-.hamburger {
-    display: none;
-    position: relative;
-    width: 25px;
-    height: 20px;
-    z-index: 10;
-    transition: all 0.5s ease-out;
-
-    &::before {
-    top: 0;
-    left: 0;
-    }
-
-    &::after {
-    bottom: 0;
-    left: 0;
-    }
-
-    & .hamburger__line {
-    top: calc( 50% - 1px );
-    }
-
-    &.active {
-    transform: rotate(90deg);
-    }
-}
-
-
-@media (max-width: 767px) {
-  .hamburger {
-    display: inline-block;
-  }
+.transparent {
+    pointer-events: none;
+    opacity: 0;
 }

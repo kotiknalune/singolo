@@ -48,7 +48,7 @@
 }
 .portfolio__blocks {
 	margin: 1.8rem 4rem 0rem 4rem;
-    max-height: 620px;
+    height: 620px;
     overflow: hidden;
 }
 
@@ -62,13 +62,20 @@
 
 .blocks__block {
 	width: 220px;
-	height: 187px;
+	height: 186px;
     margin-bottom:2rem;
 	order:2;	
 	transition: 0.5s ease-in-out;
     & span {
 	    display: none;
     }
+}
+
+.project {
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .thumb1 { background-image:url(assets/images/portfolio/1.png); }

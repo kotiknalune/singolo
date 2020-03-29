@@ -1,0 +1,132 @@
+
+@media (max-width: 767px) {
+  .slider,
+  .services,
+  .portfolio,
+  .about,
+  .contact { 
+    scroll-margin-top: 70px;
+  }
+
+  .header {
+    height: 71px;
+    border:0;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+ .logo {
+    top: 10px;
+    left:0;
+    margin-left: calc(50vw - 4rem);
+    z-index: 9998;
+    font-size: 1.96875rem;
+    line-height: initial;
+    transition: margin-left 0.6s;
+    font-weight: bold;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 9997;
+    display: flex;
+    margin: 0;
+
+    height: 100vh;
+    width: 74.1333%;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    transition: left 0.6s;
+
+    & ul {
+      position: relative;
+      padding-inline-start: 0;
+      top: 233px;
+      left: 72px;
+
+      & li {
+        display: block;
+        margin-bottom: 30px;
+
+        & a {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: -0.04em;
+        }
+
+        &:not(:first-child) a {
+          margin-left: 0;
+        }
+      }
+    
+    }
+  }
+
+  .navigation .active {
+    left: 0;
+  }
+
+  .navigation .to-right {
+    left: 0;
+  }
+
+  nav li:not(:first-child) a::before {
+    content: none;
+    left: 0;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 374px) {
+  .iphone {
+    width: 70.4px;
+    height: 151.5px;
+  }
+
+  .iphone__phone {
+    width: 63.4px;
+    height: 134px;
+  }
+
+  .iphone__screen {
+    top: 18.6px;
+    width: 56px;
+    height: 98px;
+  }
+
+  .iphone__shadow {
+    width: 70.4px;
+    height: 140.9px;
+  }
+
+  .iphone_horizontal .iphone__shadow {
+    top: auto;
+    bottom: 0;
+  }
+
+  .iphone_horizontal .iphone__screen {
+    top: 37px;
+    height: 97.5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .portfolio__tags .tag {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1020px) {
+.slider {
+    min-height: 600px;
+}
+}
+

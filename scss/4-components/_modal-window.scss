@@ -5,29 +5,31 @@
 	height: 100vh;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.32);
+	background: rgba(0, 0, 0, 0.5);
 	overflow-wrap: break-word;
+	overflow-y: hidden;
 	&.hidden {
 		display: none;
 	}
 }
 
 #message {
-	position: absolute;
-	width: 510px;
-	padding: 10px;
-	background-color: $color-message-bg;
-	top: 20%;
-	left: 32%;
-	border: 2px solid $color-dark;
-	@include radius(5px);
+    position: absolute;
+    width: 510px;
+    padding: 11px;
+    background-color: rgba(50, 55, 70, 0.9);
+    top: 20%;
+    left: 35%;
+    border: 1px solid #fbc65f80;
+    @include radius(5px);
 	z-index:3;
 
 	& p {
-		padding-left: 15px;
+		padding: 5px;
 		line-height: 3rem;
 	}
 }
+
 
 #message-title {
 	text-align: center;
@@ -51,10 +53,9 @@ span.messages {
 }
 
 .message-button {
-	width: 70px;
-	height: 25px;
-	margin-top: 20px;
-	margin-left: 43%;
+
+	margin-top: 1rem;
+	margin-left: 38%;
 
 	@extend%button;
 }

@@ -1,6 +1,6 @@
 
 .header {
-	height: 89px;
+	height: 88px;
     background: $color-medium;
     border-bottom: 6px solid $color-dark;
     position: sticky;
@@ -17,13 +17,13 @@
 
 .logo {
 	position: relative;
-    top: 12.5px;
+    top: 12px;
     left: 40px;
 }
 
 .navigation {
 	position: relative;
-    top: 12.5px;
+    top: 12px;
     right: 28px;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .menu__item {
-	padding-left: 14.5px;
+	padding-left: 20px;
 
     & .last:after {
 	content: '';
@@ -41,7 +41,7 @@
 
     & a {
         font-weight: 700;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: -0.4pt;
         
@@ -52,8 +52,8 @@
 
         &:after {
         content: '\00B7';
-        color:$color-dark;
-        margin-left: 12.8px;
+        color:$color-white;
+        margin-left: 12px;
         }
     }
    

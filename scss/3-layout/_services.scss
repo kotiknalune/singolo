@@ -7,50 +7,52 @@
 
 .services__title {
 	padding-top: 6rem;
-    padding-left:3.95rem;
-    margin-bottom:0;
+    padding-left:4rem;
+	margin-bottom:0;
+	letter-spacing: 0.015em;
 }
 
 .services__subtitle {
-    padding-top:1.9rem;
-	padding-left:4rem;
-    line-height: 3.1rem;
+    padding-top: 1.8rem;
+    padding-left: 4rem;
+    line-height: 3rem;
+    padding-right: 4rem;
+    letter-spacing: -0.005em;
 }
 
 .container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 2rem 0 4rem;
 }
 
 .container__item {
 	flex: 0 0 33.333333%;
-    margin-top: 42.5px;
-    height: 80px;
+    margin-top: 4.25rem;
+    height: 82px;
 }
 
 .item__icon {
     display: block;
     float: left;
-    margin: 2px 20px 60px 11px;
+    margin: 0.4rem 2rem 5rem 0;
     background: rgba(0, 0, 0, 0.0001);
-    border: 2px solid $color-primary;
-    width: 55px;
-    height: 55px;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
+    border: 2px solid #666d89;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
 .item__text {
-	padding-right:11px;
+	padding-right:2rem;
     & p {
         font-size: 1.2rem;
         padding-top: 6.5px;
-        line-height: 2.1rem;
+        line-height: 2.2rem;
         text-align: justify;
-        word-break: break-all;
     }
 }
 
