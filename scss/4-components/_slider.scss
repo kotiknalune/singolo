@@ -1,6 +1,6 @@
 
 .slider {
-  max-height: 68.1vw;
+  max-height: 609px;
   box-sizing: border-box;
 	position: relative;
 	overflow: hidden;	
@@ -20,7 +20,8 @@ main > .blue {
   align-items: center;
   margin: 0 auto;
   position: relative;
-  height: 31vw;
+ 
+  height: 80vh;
   justify-content: center;
   transition: all 1s ease;
   overflow: hidden;
@@ -160,8 +161,7 @@ main > .blue {
   top: -1px;
   height: 458px;
   width: 216px;
-  background: url("assets/images/phone-base.png");
-  background-repeat: no-repeat;
+  background-image: url("assets/images/phone-base.png");
   z-index: 2;
 }
   
@@ -171,20 +171,21 @@ main > .blue {
   top: 64px;
   height: 333px;
   width: 188px;
-  background: url("assets/images/screen-vertical.png");
-  background-repeat: no-repeat;
+  background-image: url("assets/images/screen-vertical.png");
 	z-index: 3;
 	transition: 0.5s ease-in-out;
 }
   
+#screen_green {
+  background-image: url("assets/images/screen-green.png");
+}
 .phone_vertical .phone__shadow {
   position: absolute;
   left: 0;
   top: -1px;
   height: 483px;
   width: 240px;
-  background: url("assets/images/phone-vertical-shadow.png");
-  background-repeat: no-repeat;
+  background-image: url("assets/images/phone-vertical-shadow.png");
   z-index: 1;
 }
 
@@ -200,8 +201,7 @@ main > .blue {
   right: 25px;
   width: 458px;
   height: 216px;
-  background: url("assets/images/phone-base-horizontal.png");
-  background-repeat: no-repeat;
+  background-image: url("assets/images/phone-base-horizontal.png");
   z-index: 2;
 }
   
@@ -211,8 +211,7 @@ main > .blue {
   top: 14px;
   height: 188px;
   width: 333px;
-  background: url("assets/images/screen-horizontal.png");
-  background-repeat: no-repeat;
+  background-image: url("assets/images/screen-horizontal.png");
 	z-index: 3;
 	transition: 0.5s ease-in-out;
 }
@@ -223,8 +222,7 @@ main > .blue {
   top: 0px;
   height: 240px;
   width: 483px;
-  background: url("assets/images/phone-horizontal-shadow.png");
-  background-repeat: no-repeat;
+  background-image: url("assets/images/phone-horizontal-shadow.png");
   z-index: 1;
 }
 
